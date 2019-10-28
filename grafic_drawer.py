@@ -5,13 +5,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-PROB_TYPE = "max"  # Değiştirilebilir "max", "min"
 X_MIN = 0
 X_MAX = 5
 MAX_POINTS = 1000  # Değiştirilebilir herhanbir bir sayı
 
 
-def Z(point: tuple) -> float:
+def Z(point: tuple) -> float:  # Değiştirilebilir herhanbir bir sayı
     return point[0] + 2 * point[1]
 
 
@@ -87,7 +86,8 @@ def print_results(points: set):
     value = [Z(point) for point in points]
 
     print("Points: ", points)
-    print(PROB_TYPE + " " + str(max(value) if PROB_TYPE == "max" else min(value)))
+    print("Min " + str(max(value)))
+    print("Max: " + str(min(value)))
 
 
 X = initialize_X()
