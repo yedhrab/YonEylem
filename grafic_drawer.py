@@ -86,8 +86,8 @@ def print_results(points: set):
     value = [Z(point) for point in points]
 
     print("Points: ", points)
-    print("Min " + str(max(value)))
-    print("Max: " + str(min(value)))
+    print("Max " + str(max(value)))
+    print("Min: " + str(min(value)))
 
 
 X = initialize_X()
